@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What is Civil Engineering</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
@@ -88,7 +89,48 @@ li {
 }
 
 
+.links{
+    padding: 20px;
+}
+
+.banner{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 350px;
+    border-radius: 20px;
+    color: #fff6fa;
+    background-image: linear-gradient(rgb(255, 150, 239), rgba(134, 6, 127, 0.59));
+    background-color: #f168a1;
+    padding: 10px 50px 10px 30px;
+    margin: 0px 0px 0px 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.small-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 15px;
+    color: #2e1a47;
+}
+
+.big-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2e1a47;
+    line-height: 0.9;
+}
+
+.script-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 18px;
+    color: white;
+    margin-left: 55px;
+}
+
 nav{
+    flex-wrap:wrap ;
     z-index: 5;
     border-bottom: 1px solid rgb(255, 255, 255);
     box-shadow: 0px 0px 15px 10px rgba(247, 150, 240, 0.394);
@@ -96,7 +138,7 @@ nav{
     top: 0px;
     margin: -40px 0px 30px -20px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     display: flex;
     background-color:#ffadc7;
@@ -114,7 +156,59 @@ nav a:hover{
     color: #ffffff;
 }
 
-@media (max-width: 600px){
+@media (max-width: 1000px){
+
+    nav{
+        margin: 0%;
+        justify-content: center;
+    }
+
+
+    .banner{
+        background-image: none;
+        flex-wrap: wrap;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        display: flex;
+        border-radius: 0px;
+        margin: 0px;
+        text-align: center;
+        flex-basis: 100%;
+    }
+
+    .small-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    color: #2e1a47;
+    }
+
+    .big-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #2e1a47;
+    }
+
+    .script-text {
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    color: white;
+    margin: 0px;
+    }
+
+}
+
+
+@media (max-width: 615px){
+
+    nav{
+        margin: 0%;
+        justify-content: center;
+    }
+
 
     nav a{
         padding: 20px;
@@ -123,10 +217,27 @@ nav a:hover{
 
 }
 
-@media (max-width: 500px){
+@media (max-width: 525px){
+    nav{
+        margin: 0%;
+        justify-content: center;
+    }
 
     nav a{
         padding: 10px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 415px){
+    nav{
+        margin: 0%;
+        justify-content: center;
+    }
+
+    nav a{
+        padding: 3px;
         font-size: 12px;
     }
 
@@ -147,11 +258,18 @@ footer{
 <body>
 
     <nav>
+       <div class="banner">
+            <div class="small-text">All About</div>
+            <div class="big-text">CIVIL</div>
+            <div class="script-text">Engineering</div>
+        </div>
+        <div class="links">
         <a href="index.html" target="right">Home</a>
         <a href="history.html" target="right">History</a>
         <a href="majors.html" target="right">Specializations</a>
         <a href="tips.html" target="right">Tips</a>
         <a href="green.html" target="right">Sustainability</a>
+        </div>
     </nav>
 
 <div class="container">
@@ -188,7 +306,7 @@ Civil engineering has a variety of specializations that focus on different topic
 <!-- 1 -->
 <div class="section">
 <h3 class="number-title">1. Structural Engineering</h3>
-<img src="images/structural.jpeg">
+<img src="4f9597ed-bd1b-4217-a9de-11f8edda2e4b.jpg">
 <p>
 Structural engineering students learn how to design large structures and ensure they can stay functional during high winds and natural disasters, like earthquakes. They study the gravitational properties of a structure to determine how much weight they can handle, as this step allows them to create support mechanisms through beams and columns. It's important for these students to take courses on other physical science topics, including kinetics, shock waves and airflow. After they graduate from a program, they can further specialize in building, bridge design or aircraft engineering.
 </p>
@@ -205,7 +323,7 @@ Structural engineering students learn how to design large structures and ensure 
 <!-- 2 -->
 <div class="section">
 <h3 class="number-title">2. Construction Engineering and Management</h3>
-<img src="images/cme.jpeg">
+<img src="215fbaf8-74a9-4ad6-b39b-e5e0c2b5cf18.jpg">
 <p>
 In this specialization, civil engineering students can learn the design principles of construction, building code regulations and operation steps for a project. They typically take courses on how to manage a project's resources and equipment, then how to construct buildings that are safe, functional and sustainable. Students also study how to organize each construction process step, including making a timeline, maintaining a materials inventory and preparing a budget. Programs with a management component often emphasize building information modeling (BIM), which is an information technology tool that many construction engineers use for their endeavors.
 </p>
@@ -222,24 +340,24 @@ In this specialization, civil engineering students can learn the design principl
 <!-- 3 -->
 <div class="section">
 <h3 class="number-title">3. Geotechnical Engineering</h3>
-<img src="images/geo.jpeg">
+<img src="e7ba157c-8c7a-437f-8792-5aa97923b4c9.jpg">
 <p>
-In this specialization, civil engineering students can learn the design principles of construction, building code regulations and operation steps for a project. They typically take courses on how to manage a project's resources and equipment, then how to construct buildings that are safe, functional and sustainable. Students also study how to organize each construction process step, including making a timeline, maintaining a materials inventory and preparing a budget. Programs with a management component often emphasize building information modeling (BIM), which is an information technology tool that many construction engineers use for their endeavors.
+Geotechnical engineering is a specialization that involves the study of rocks, soil and any artificial materials that support a system. For example, a graduate may coordinate the construction of an underground mining facility. It's important for geotechnical students to learn about the chemical properties of earth materials, as different types of rock may require different building techniques. When completing their degree, students often study water and soil interactions, plus how to design pavement structures and predict whether a natural slope can handle the additional weight.
 </p>
 <ul>
-<li>Residential buildings</li>
-<li>Commercial buildings</li>
-<li>Roads and bridges</li>
-<li>Water treatment plants</li>
-<li>School locations</li>
-<li>Hospital environments</li>
+<li>Water tank reservoir systems</li>
+<li>Sewer tunnel systems</li>
+<li>Pavements and roads</li>
+<li>Natural embankments</li>
+<li>Historical monument restoration</li>
+<li>Soil sampling and testing</li>
 </ul>
 </div>
 
 <!-- 4 -->
 <div class="section">
 <h3 class="number-title">4. Environmental Engineering</h3>
-<img src="images/envi.jpeg">
+<img src="baf93149-2759-41a1-a3b3-0ddab94e911c.jpg">
 <p>
 Environmental engineering students learn how to reduce the overall impact of an artificial system on the world's ecosystem and manage natural resources for a construction project. They typically study the chemical properties of water, soil and air so they can design technical mechanisms that solve pollution issues. After they graduate, they may help companies improve the sustainability of their facilities and advise legislators on environmental policies. Their projects often result in the production of green energy, which is a renewable power source from natural occurrences like sunlight or water.
 </p>
@@ -256,7 +374,7 @@ Environmental engineering students learn how to reduce the overall impact of an 
 <!-- 5 -->
 <div class="section">
 <h3 class="number-title">5. Transportation Engineering</h3>
-<img src="images/transpo.jpeg">
+<img src="b5c4f4fc-bdb8-49d1-8e25-28e0ffe2d776.jpg">
 <p>
 In a transportation engineering specialization, students learn how to design networking systems that individuals use for traveling purposes, including railroads, subways, airways and seaways. They study how to develop infrastructure to help people move between locations safely and efficiently, including pathway plans. Transportation engineering students also learn how to modify natural environments to plan transportation systems, like an artificial canal. When taking coursework, students typically study physical science properties like applied force and lateral force, which involves how earthquakes or wind storms may affect a system's durability.
 </p>
@@ -273,7 +391,7 @@ In a transportation engineering specialization, students learn how to design net
 <!-- 6 -->
 <div class="section">
 <h3 class="number-title">6. Water Resource Engineering</h3>
-<img src="images/waterresource.jpeg">
+<img src="4e42b412-1488-4d21-934e-c22e447a3d48.jpg">
 <p>
 Water resources engineering involves developing infrastructure for safe drinking water in towns and cities. Students learn the hydrologic cycle, which is how water molecules move between the atmosphere and the earth over time. They use this knowledge of natural systems to design water sanitation facilities and artificial lakes or ponds. This civil engineering specialization also involves hydraulics, which refers to how water moves through pipes and channels through natural forces in physical science.
 </p>
@@ -290,7 +408,7 @@ Water resources engineering involves developing infrastructure for safe drinking
 <!-- 7 -->
 <div class="section">
 <h3 class="number-title">7. Material Engineering</h3>
-<img src="images/material.jpeg">
+<img src="71e95bfa-afe2-4f71-8a57-f2c1a8b4281d.jpg">
 <p>
 This specialization involves the study of all items and components required for a construction project, such as wood, steel and concrete. They may also study stones, soil, plastics and fabrics, depending on a university program's requirements. Materials engineering students learn the chemical properties of these items, which allows them to determine the best possible materials for a project or adjust them on an atomic level. For example, a professional might measure a component's ability to handle heat or conduct electricity.
 </p>
