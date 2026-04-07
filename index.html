@@ -200,6 +200,16 @@ nav a:hover{
     color: #ffffff;
 }
 
+iframe{
+    padding: 5px;
+    border: 5px dotted rgb(215, 51, 127);
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+    margin: 0px 0px 50px 0px;
+
+}
+
 @media (max-width: 1000px){
 
     nav{
@@ -207,6 +217,10 @@ nav a:hover{
         justify-content: center;
     }
 
+    iframe{
+    width: 560px;
+    height: 300px;
+    }   
 
     .banner{
         background-image: none;
@@ -253,6 +267,10 @@ nav a:hover{
         justify-content: center;
     }
 
+    iframe{
+    width: 500px;
+    height: 250px;
+    }  
 
     nav a{
         padding: 20px;
@@ -267,6 +285,11 @@ nav a:hover{
         justify-content: center;
     }
 
+    iframe{
+    width: 350px;
+    height: 200px;
+    } 
+
     nav a{
         padding: 10px;
         font-size: 12px;
@@ -280,6 +303,11 @@ nav a:hover{
         justify-content: center;
     }
 
+    iframe{
+    width: 300px;
+    height: 200px;
+    } 
+
     nav a{
         padding: 3px;
         font-size: 12px;
@@ -287,8 +315,15 @@ nav a:hover{
 
 }
 
+audio{
+    margin: 20px;
+}
+
 footer{
-    display: flex; justify-content: center; 
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; 
     align-items: center;  
     padding: 21px;
     background-color: #e399c5;
@@ -307,11 +342,11 @@ footer{
             <div class="script-text">Engineering</div>
         </div>
         <div class="links">
-        <a href="index.html" target="right">Home</a>
-        <a href="history.html" target="right">History</a>
-        <a href="majors.html" target="right">Specializations</a>
-        <a href="tips.html" target="right">Tips</a>
-        <a href="green.html" target="right">Sustainability</a>
+        <a href="index.html" target="_self">Home</a>
+        <a href="history.html" target="_self">History</a>
+        <a href="majors.html" target="_self">Specializations</a>
+        <a href="tips.html" target="_self">Tips</a>
+        <a href="green.html" target="_self">Sustainability</a>
         </div>
     </nav>
 
@@ -325,9 +360,20 @@ footer{
     </div>
 </section>
 
+
 <!-- ABOUT -->
 <section id="about" class="about">
+    
     <h2>What is Civil Engineering?</h2>
+
+    <iframe 
+    src="https://www.youtube.com/embed/k_8fbJrALU4" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+    </iframe>
+
 
     <div class="card">
         <p>
@@ -348,12 +394,15 @@ footer{
         <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232" alt="">
         <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="">
     </div>
-
+    
+    
 </section>
 
 </body>
 
 <footer>
-    Copyright @2026 
+    <audio src="musics/Taylor Swift - The Prophecy (Official Lyric Video) - Taylor Swift (128k).mp3" controls autoplay type="audio/mp3"></audio>
+    <h4>Background music - Taylor Swift - The Prophecy</h4>
+    <p>Copyright @2026 </p>
 </footer>
 </html>
